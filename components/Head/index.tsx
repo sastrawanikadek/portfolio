@@ -25,7 +25,7 @@ const Head: FC<HeadProps> = ({
     <NextHead>
       <title>{title}</title>
       <link rel='icon' href={icon} />
-      <link rel='canonical' href={url} />
+      <link rel='canonical' href={url || process.env.VERCEL_URL} />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta name='description' content={description} />
       <meta property='og:type' content={type} />
