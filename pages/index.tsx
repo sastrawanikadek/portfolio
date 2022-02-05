@@ -131,7 +131,6 @@ const Home: NextPage = () => {
               src='/images/hero.svg'
               alt='Coding Illustration'
               layout='fill'
-              priority={true}
             />
           </div>
         </figure>
