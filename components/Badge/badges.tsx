@@ -17,8 +17,10 @@ import {
   SiPhp,
   SiPython,
   SiReact,
+  SiScikitlearn,
   SiSelenium,
   SiTailwindcss,
+  SiTensorflow,
   SiTypescript,
 } from 'react-icons/si';
 
@@ -142,6 +144,18 @@ const badges = {
     textColor: 'text-white',
     icon: <SiMongodb />,
     name: 'MongoDB',
+  },
+  tensorflow: {
+    backgroundColor: 'bg-orange-600',
+    textColor: 'text-white',
+    icon: <SiTensorflow />,
+    name: 'Tensorflow',
+  },
+  sklearn: {
+    backgroundColor: 'bg-orange-400',
+    textColor: 'text-white',
+    icon: <SiScikitlearn />,
+    name: 'scikit-learn',
   },
 };
 

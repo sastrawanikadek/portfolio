@@ -41,10 +41,11 @@ const SectionIndicator: FC<SectionIndicatorProps> = ({ sectionIds }) => {
 
   return (
     <div className='flex-1 flex flex-col items-center justify-center'>
-      {sectionIds.map((v) => (
+      {sectionIds.map((v, i) => (
         <SectionIndicatorItem
           key={v}
           sectionId={v}
+          index={i}
           active={v == activeSection}
         />
       ))}

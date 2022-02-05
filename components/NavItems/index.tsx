@@ -12,7 +12,7 @@ const NavItems: FC<
   NavItemsProps & React.ButtonHTMLAttributes<HTMLButtonElement>
 > = ({
   sectionIds,
-  color = 'dark:text-white',
+  color = 'text-white',
   textCase = 'uppercase',
   isBold = true,
   className,
@@ -27,8 +27,8 @@ const NavItems: FC<
 
   return (
     <>
-      {sectionIds.map((v) => (
-        <li key={v}>
+      {sectionIds.map((v, i) => (
+        <li key={v} data-aos='zoom-in' data-aos-delay={100 * (i + 1)}>
           <button
             {...props}
             className={clsx(

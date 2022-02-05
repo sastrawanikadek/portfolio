@@ -22,7 +22,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
   techStacks,
 }) => {
   return (
-    <div className='mb-8'>
+    <div className='mb-16'>
       {projectURL ? (
         <a
           href={projectURL}
@@ -53,12 +53,12 @@ const ProjectItem: FC<ProjectItemProps> = ({
             href={projectURL}
             target='_blank'
             rel='noreferrer'
-            className='text-2xl font-bold font-poppins transition duration-300 dark:text-white hover:text-purple-500'
+            className='text-2xl font-bold font-poppins transition duration-300 text-white hover:text-purple-500'
           >
             {name}
           </a>
         ) : (
-          <h5 className='text-2xl font-bold font-poppins transition duration-300 dark:text-white hover:text-purple-500'>
+          <h5 className='text-2xl font-bold font-poppins transition duration-300 text-white hover:text-purple-500'>
             {name}
           </h5>
         )}
@@ -84,10 +84,10 @@ const ProjectItem: FC<ProjectItemProps> = ({
           </a>
         )}
       </div>
-      <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
+      <p className='w-full font-montserrat text-base mb-4 text-gray-300 '>
         {description}
       </p>
-      <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
+      <p className='w-full font-montserrat text-base mb-4 text-gray-300 '>
         Here are some technologies used to develop this application:
       </p>
       <div className='flex flex-wrap'>

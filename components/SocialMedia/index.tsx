@@ -18,11 +18,17 @@ interface SocialMediaProps {
 const SocialMedia: FC<SocialMediaProps> = ({ type, name }) => {
   const urls = {
     github: `https://github.com/${name}`,
-    linkedin: `https://www.linkedin.com/in/${name}`,
+    linkedin: `https://linkedin.com/in/${name}`,
   };
 
   return (
-    <a href={urls[type]} className='block mb-6'>
+    <a
+      href={urls[type]}
+      data-aos='zoom-in'
+      data-aos-delay={100}
+      data-aos-offset={0}
+      className='block mb-6'
+    >
       {icons[type]}
     </a>
   );
