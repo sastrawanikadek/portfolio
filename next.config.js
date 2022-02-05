@@ -8,4 +8,7 @@ module.exports = withReactSvg({
     return config;
   },
   reactStrictMode: true,
+  images: {
+    domains: ['user-images.githubusercontent.com'],
+  },
 });

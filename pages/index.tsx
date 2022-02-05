@@ -8,6 +8,8 @@ import ContactItem from 'components/ContactItem';
 import SectionTitle from 'components/SectionTitle';
 import AboutBadge from 'components/AboutBadge';
 import aboutBadges from 'components/AboutBadge/badges';
+import projects from 'components/ProjectItem/projects';
+import ProjectItem from 'components/ProjectItem';
 
 const sections = ['about', 'project', 'publication', 'contact'];
 
@@ -95,10 +97,10 @@ const Home: NextPage = () => {
       </section>
       <section
         id='about'
-        className='relative overflow-hidden md:max-w-[calc(100%-80px)] md:ml-20'
+        className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
       >
-        <div className='container flex flex-col py-56 px-8 lg:px-16 md:flex-row'>
-          <div className='flex-1 order-2 md:order-1'>
+        <div className='container flex flex-col px-8 lg:px-16 lg:flex-row'>
+          <div className='flex-1 order-2 lg:order-1'>
             <SectionTitle>About Me</SectionTitle>
             <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
               Hello! My name is Kadek Sastrawan, I&apos;m a fresh graduate and
@@ -138,20 +140,37 @@ const Home: NextPage = () => {
               ))}
             </div>
           </div>
-          <div className='mb-16 flex-1 flex items-center justify-center order-1 md:order-2 md:mb-0'>
-            <div className='relative'>
+          <div className='mb-16 flex-1 flex items-center justify-center order-1 lg:order-2 lg:mb-0'>
+            <div className='relative h-60 w-60 lg:h-80 lg:w-80'>
               <Image
                 src='/images/me.jpg'
                 alt='Myself'
-                height={300}
-                width={300}
-                layout='fixed'
+                layout='fill'
                 className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
               />
             </div>
           </div>
         </div>
-        <div className='container py-56 px-8 lg:px-16'></div>
+      </section>
+      <section
+        id='project'
+        className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
+      >
+        <div className='container px-8 lg:px-16'>
+          <SectionTitle>The Project that I&apos;ve Developed</SectionTitle>
+          <div className='flex flex-col lg:flex-row'>
+            <div className='flex-1 lg:pr-4'>
+              {projects.slice(0, Math.ceil(projects.length / 2)).map((v) => (
+                <ProjectItem key={v.name} {...v} />
+              ))}
+            </div>
+            <div className='flex-1 lg:pl-4'>
+              {projects.slice(Math.ceil(projects.length / 2)).map((v) => (
+                <ProjectItem key={v.name} {...v} />
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

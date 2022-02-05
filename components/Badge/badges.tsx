@@ -1,104 +1,148 @@
 import React from 'react';
 import {
+  SiApollographql,
   SiFlask,
   SiGit,
   SiGo,
+  SiGraphql,
   SiJavascript,
+  SiJquery,
+  SiJsonwebtokens,
   SiKeras,
   SiKotlin,
+  SiMongodb,
   SiMysql,
   SiNextdotjs,
+  SiNodedotjs,
   SiPhp,
   SiPython,
   SiReact,
+  SiSelenium,
   SiTailwindcss,
+  SiTypescript,
 } from 'react-icons/si';
 
-const badges = [
-  {
-    url: 'https://tailwindcss.com/',
+const badges = {
+  tailwind: {
     backgroundColor: 'bg-sky-500',
     textColor: 'text-white',
     icon: <SiTailwindcss />,
     name: 'Tailwind CSS',
   },
-  {
-    url: 'https://reactjs.org/',
+  react: {
     backgroundColor: 'bg-sky-400',
     textColor: 'text-white',
     icon: <SiReact />,
     name: 'React',
   },
-  {
-    url: 'https://python.org/',
+  python: {
     backgroundColor: 'bg-blue-900',
     textColor: 'text-white',
     icon: <SiPython />,
     name: 'Python',
   },
-  {
-    url: 'https://php.net/',
+  php: {
     backgroundColor: 'bg-indigo-400',
     textColor: 'text-white',
     icon: <SiPhp />,
     name: 'PHP',
   },
-  {
-    url: 'https://nextjs.org/',
+  next: {
     backgroundColor: 'bg-black',
     textColor: 'text-white',
     icon: <SiNextdotjs />,
     name: 'Next.js',
   },
-  {
-    url: 'https://mysql.com/',
+  mysql: {
     backgroundColor: 'bg-[#4479a1]',
     textColor: 'text-white',
     icon: <SiMysql />,
     name: 'MySQL',
   },
-  {
-    url: 'https://kotlinlang.org/',
+  kotlin: {
     backgroundColor: 'bg-purple-600',
     textColor: 'text-white',
     icon: <SiKotlin />,
     name: 'Kotlin',
   },
-  {
-    url: 'https://keras.io/',
+  keras: {
     backgroundColor: 'bg-red-600',
     textColor: 'text-white',
     icon: <SiKeras />,
     name: 'Keras',
   },
-  {
-    url: 'https://javascript.com/',
+  javascript: {
     backgroundColor: 'bg-yellow-500',
     textColor: 'text-black',
     icon: <SiJavascript />,
     name: 'Javascript (ES9)',
   },
-  {
-    url: 'https://go.dev/',
+  go: {
     backgroundColor: 'bg-sky-700',
     textColor: 'text-white',
     icon: <SiGo />,
     name: 'Go',
   },
-  {
-    url: 'https://git-scm.com/',
+  git: {
     backgroundColor: 'bg-red-500',
     textColor: 'text-white',
     icon: <SiGit />,
     name: 'Git',
   },
-  {
-    url: 'https://flask.palletsprojects.com/',
+  flask: {
     backgroundColor: 'bg-white',
     textColor: 'text-black',
     icon: <SiFlask />,
     name: 'Flask',
   },
-].sort((a, b) => a.name.localeCompare(b.name));
+  typescript: {
+    backgroundColor: 'bg-sky-700',
+    textColor: 'text-white',
+    icon: <SiTypescript />,
+    name: 'Typescript',
+  },
+  node: {
+    backgroundColor: 'bg-green-700',
+    textColor: 'text-white',
+    icon: <SiNodedotjs />,
+    name: 'Node.js',
+  },
+  jquery: {
+    backgroundColor: 'bg-sky-700',
+    textColor: 'text-white',
+    icon: <SiJquery />,
+    name: 'jQuery',
+  },
+  selenium: {
+    backgroundColor: 'bg-green-600',
+    textColor: 'text-white',
+    icon: <SiSelenium />,
+    name: 'Selenium',
+  },
+  jwt: {
+    backgroundColor: 'bg-purple-500',
+    textColor: 'text-white',
+    icon: <SiJsonwebtokens />,
+    name: 'JWT',
+  },
+  graphql: {
+    backgroundColor: 'bg-pink-700',
+    textColor: 'text-white',
+    icon: <SiGraphql />,
+    name: 'GraphQL',
+  },
+  apollo: {
+    backgroundColor: 'bg-indigo-600',
+    textColor: 'text-white',
+    icon: <SiApollographql />,
+    name: 'Apollo GraphQL',
+  },
+  mongodb: {
+    backgroundColor: 'bg-green-500',
+    textColor: 'text-white',
+    icon: <SiMongodb />,
+    name: 'MongoDB',
+  },
+};
 
 export default badges;
