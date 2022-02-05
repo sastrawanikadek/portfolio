@@ -18,14 +18,14 @@ const Head: FC<HeadProps> = ({
   description = '',
   type = 'website',
   locale = 'en_US',
-  url = process.env.NEXT_PUBLIC_BASE_URL,
+  url = process.env.NEXT_PUBLIC_URL,
   image = icon,
 }) => {
   return (
     <NextHead>
       <title>{title}</title>
       <link rel='icon' href={icon} />
-      <link rel='canonical' href={url || process.env.VERCEL_URL} />
+      <link rel='canonical' href={url} />
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta name='description' content={description} />
       <meta property='og:type' content={type} />
