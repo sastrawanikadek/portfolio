@@ -1,11 +1,13 @@
+import type { NextPage } from 'next';
 import Image from 'next/image';
 import Head from 'components/Head';
 import NavItems from 'components/NavItems';
 import SectionIndicator from 'components/SectionIndicator';
 import SocialMedia from 'components/SocialMedia';
-import type { NextPage } from 'next';
 import ContactItem from 'components/ContactItem';
 import SectionTitle from 'components/SectionTitle';
+import AboutBadge from 'components/AboutBadge';
+import aboutBadges from 'components/AboutBadge/badges';
 
 const sections = ['about', 'project', 'publication', 'contact'];
 
@@ -46,7 +48,7 @@ const Home: NextPage = () => {
             <h1 className='text-6xl dark:text-white font-bold mb-3 font-poppins'>
               Kadek Sastrawan
             </h1>
-            <h2 className='text-4xl text-purple-500 font-bold mb-3'>
+            <h2 className='text-4xl font-bold mb-3'>
               <span className='font-montserrat dark:text-white'>
                 I&apos;m a{' '}
               </span>
@@ -54,7 +56,7 @@ const Home: NextPage = () => {
                 Software Engineer.
               </span>
             </h2>
-            <p className='text-lg text-gray-400 w-full md:w-3/4 lg:w-1/2 font-montserrat dark:text-gray-300'>
+            <p className='text-lg text-gray-700 w-full md:w-3/4 lg:w-1/2 font-montserrat dark:text-gray-300'>
               I&apos;m focused on web and mobile development both front-end and
               back-end. Currently have an interest in NLP, machine learning, and
               deep learning.
@@ -95,10 +97,10 @@ const Home: NextPage = () => {
         id='about'
         className='relative overflow-hidden md:max-w-[calc(100%-80px)] md:ml-20'
       >
-        <div className='container flex py-56 px-8 lg:px-16'>
-          <div className='flex-1'>
+        <div className='container flex flex-col py-56 px-8 lg:px-16 md:flex-row'>
+          <div className='flex-1 order-2 md:order-1'>
             <SectionTitle>About Me</SectionTitle>
-            <p className='w-full font-montserrat text-base text-gray-400 mb-4 dark:text-gray-300 '>
+            <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
               Hello! My name is Kadek Sastrawan, I&apos;m a fresh graduate and
               self-taught software engineer that&apos;s passionate about
               programming since in highschool. It started when I randomly bought
@@ -106,16 +108,50 @@ const Home: NextPage = () => {
               it was really fun and I feel like I can make anything with
               programming.
             </p>
-            <p className='w-full font-montserrat text-base text-gray-400 mb-4 dark:text-gray-300 '>
+            <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
               Long story short, I&apos;ve been learning some languages and
               technologies, I also did a freelance job while studying in
               college. My main focus now is to keep widening my knowledge by
               learning the cutting-edge technology and applying it by developing
               a meaningful application.
             </p>
+            <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
+              Recently I was interested in learning NLP, machine learning, and
+              deep learning. I learned it for about a year or so and publish a{' '}
+              <a
+                href='https://www.sciencedirect.com/science/article/pii/S2405959521001375'
+                target='_blank'
+                rel='noreferrer'
+                className='text-purple-500'
+              >
+                research paper
+              </a>{' '}
+              that uses deep learning methods.
+            </p>
+            <p className='w-full font-montserrat text-base text-gray-700 mb-4 dark:text-gray-300 '>
+              Here are some technologies that I&apos;ve used and worked with
+              recently:
+            </p>
+            <div className='flex flex-wrap'>
+              {aboutBadges.map((v) => (
+                <AboutBadge key={v.url} {...v} />
+              ))}
+            </div>
           </div>
-          <div className='flex-1'></div>
+          <div className='mb-16 flex-1 flex items-center justify-center order-1 md:order-2 md:mb-0'>
+            <div className='relative'>
+              <Image
+                src='/images/me.jpg'
+                alt='Myself'
+                height={300}
+                width={300}
+                layout='fixed'
+                className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
+              />
+            </div>
+          </div>
         </div>
+        <div className='container py-56 px-8 lg:px-16'></div>
       </section>
     </div>
   );
