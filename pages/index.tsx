@@ -7,7 +7,6 @@ import NavItems from 'components/NavItems';
 import SectionIndicator from 'components/SectionIndicator';
 import SocialMedia from 'components/SocialMedia';
 import ContactItem from 'components/ContactItem';
-import SectionTitle from 'components/SectionTitle';
 import AboutBadge from 'components/AboutBadge';
 import aboutBadges from 'components/AboutBadge/badges';
 import projects from 'components/ProjectItem/projects';
@@ -152,7 +151,9 @@ const Home: NextPage = () => {
       >
         <div className='container flex flex-col px-8 lg:px-16 lg:flex-row'>
           <div className='flex-1 order-2 lg:order-1'>
-            <SectionTitle>About Me</SectionTitle>
+            <h4 className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'>
+              About Me
+            </h4>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
               Hello! My name is Kadek Sastrawan, I&apos;m a fresh graduate and
               self-taught software engineer that&apos;s passionate about
@@ -208,7 +209,13 @@ const Home: NextPage = () => {
         className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
       >
         <div className='container pt-16 px-8 lg:pt-0 lg:px-16'>
-          <SectionTitle>The Project that I&apos;ve Developed</SectionTitle>
+          <h4
+            data-aos='fade-down'
+            data-aos-delay={100}
+            className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'
+          >
+            The Project that I&apos;ve Developed
+          </h4>
           <div className='flex flex-col lg:flex-row'>
             <div className='flex-1 lg:pr-8'>
               {projects.slice(0, Math.ceil(projects.length / 2)).map((v, i) => (
@@ -240,7 +247,13 @@ const Home: NextPage = () => {
         className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
       >
         <div className='container px-8 lg:px-16'>
-          <SectionTitle>The Article that I&apos;ve Published</SectionTitle>
+          <h4
+            data-aos='fade-down'
+            data-aos-delay={100}
+            className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'
+          >
+            The Article that I&apos;ve Published
+          </h4>
           <div className='flex flex-col lg:flex-row'>
             <div className='flex-1 lg:pr-8'>
               {publications

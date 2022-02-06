@@ -34,6 +34,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
             src={imageURL}
             alt={name}
             layout='fill'
+            objectFit='cover'
             className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
           />
         </a>
@@ -43,6 +44,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
             src={imageURL}
             alt={name}
             layout='fill'
+            objectFit='cover'
             className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
           />
         </div>
