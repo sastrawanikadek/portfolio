@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import clsx from 'clsx';
 
 interface SectionIndicatorItemProps {
@@ -7,11 +6,11 @@ interface SectionIndicatorItemProps {
   active?: boolean;
 }
 
-const SectionIndicatorItem: FC<SectionIndicatorItemProps> = ({
+const SectionIndicatorItem = ({
   sectionId,
   index,
   active = false,
-}) => {
+}: SectionIndicatorItemProps) => {
   const handleClick = () => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',

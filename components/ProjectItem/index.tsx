@@ -1,6 +1,5 @@
 import Badge, { BadgeProps } from 'components/Badge';
 import Image from 'next/image';
-import { FC } from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 
@@ -14,7 +13,7 @@ export interface ProjectItemProps {
   techStacks: BadgeProps[];
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({
+const ProjectItem = ({
   projectURL,
   repositoryURL,
   imageURL,
@@ -22,7 +21,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
   year,
   descriptions,
   techStacks,
-}) => {
+}: ProjectItemProps) => {
   return (
     <div className='flex flex-col gap-6 mb-16'>
       {projectURL && imageURL ? (

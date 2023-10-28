@@ -1,11 +1,10 @@
 import Badge, { BadgeProps } from 'components/Badge';
-import React, { FC } from 'react';
 
 interface AboutBadgeProps extends BadgeProps {
   url: string;
 }
 
-const AboutBadge: FC<AboutBadgeProps> = ({ url, ...badgeProps }) => {
+const AboutBadge = ({ url, ...badgeProps }: AboutBadgeProps) => {
   return (
     <a href={url} target='_blank' rel='noreferrer' className='mr-2 mb-2'>
       <Badge {...badgeProps} />

@@ -1,6 +1,8 @@
-import React, { FC } from 'react';
+interface SectionTitleProps {
+  children: React.ReactNode;
+}
 
-const SectionTitle: FC = ({ children }) => {
+const SectionTitle = ({ children }: SectionTitleProps) => {
   return (
     <h4
       data-aos='fade-down'

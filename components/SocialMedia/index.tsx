@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 
 const icons = {
@@ -15,7 +14,7 @@ interface SocialMediaProps {
   name: string;
 }
 
-const SocialMedia: FC<SocialMediaProps> = ({ type, name }) => {
+const SocialMedia = ({ type, name }: SocialMediaProps) => {
   const urls = {
     github: `https://github.com/${name}`,
     linkedin: `https://linkedin.com/in/${name}`,

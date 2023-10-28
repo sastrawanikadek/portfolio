@@ -1,23 +1,20 @@
-import React, { FC } from 'react';
 import clsx from 'clsx';
 
-interface NavItemsProps {
+interface NavItemsProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   sectionIds: string[];
   color?: string;
   textCase?: 'uppercase' | 'capitalize' | 'lowercase';
   isBold?: boolean;
 }
 
-const NavItems: FC<
-  NavItemsProps & React.ButtonHTMLAttributes<HTMLButtonElement>
-> = ({
+const NavItems = ({
   sectionIds,
   color = 'text-white',
   textCase = 'uppercase',
   isBold = true,
   className,
   ...props
-}) => {
+}: NavItemsProps) => {
   const handleClick = (section: string) => {
     document.getElementById(section)?.scrollIntoView({
       behavior: 'smooth',

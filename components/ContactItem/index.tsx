@@ -1,12 +1,11 @@
 import clsx from 'clsx';
-import React, { FC } from 'react';
 
 interface ContactItemProps {
   type: 'email' | 'phone' | 'location';
   value: string;
 }
 
-const ContactItem: FC<ContactItemProps> = ({ type, value }) => {
+const ContactItem = ({ type, value }: ContactItemProps) => {
   return (
     <div
       className={clsx(

@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
 import NextHead from 'next/head';
 
 interface HeadProps {
   title: string;
+  children?: React.ReactNode;
   icon?: string;
   description?: string;
   type?: string;
@@ -11,7 +11,7 @@ interface HeadProps {
   image?: string;
 }
 
-const Head: FC<HeadProps> = ({
+const Head = ({
   children,
   title,
   icon = '/favicon.ico',
@@ -20,7 +20,7 @@ const Head: FC<HeadProps> = ({
   locale = 'en_US',
   url = process.env.NEXT_PUBLIC_URL,
   image = icon,
-}) => {
+}: HeadProps) => {
   return (
     <NextHead>
       <title>{title}</title>

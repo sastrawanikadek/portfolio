@@ -1,14 +1,13 @@
 import clsx from 'clsx';
-import React, { FC, ReactNode } from 'react';
 
 export interface BadgeProps {
   backgroundColor: string;
   textColor: string;
-  icon: ReactNode;
+  icon: React.ReactNode;
   name: string;
 }
 
-const Badge: FC<BadgeProps> = ({ backgroundColor, textColor, icon, name }) => {
+const Badge = ({ backgroundColor, textColor, icon, name }: BadgeProps) => {
   return (
     <div
       className={clsx(

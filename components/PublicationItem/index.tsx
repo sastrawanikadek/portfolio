@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import Badge, { BadgeProps } from 'components/Badge';
 import { VscCircleFilled } from 'react-icons/vsc';
 
@@ -11,14 +10,14 @@ export interface PublicationItemProps {
   techStacks: BadgeProps[];
 }
 
-const PublicationItem: FC<PublicationItemProps> = ({
+const PublicationItem = ({
   url,
   title,
   description,
   date,
   publisher,
   techStacks,
-}) => {
+}: PublicationItemProps) => {
   return (
     <a href={url} className='group'>
       <div className='bg-slate-700 rounded-md shadow-xl p-8'>

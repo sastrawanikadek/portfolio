@@ -1,11 +1,11 @@
-import React, { FC, useState, useEffect } from 'react';
 import SectionIndicatorItem from 'components/SectionIndicatorItem';
+import { useEffect, useState } from 'react';
 
 interface SectionIndicatorProps {
   sectionIds: string[];
 }
 
-const SectionIndicator: FC<SectionIndicatorProps> = ({ sectionIds }) => {
+const SectionIndicator = ({ sectionIds }: SectionIndicatorProps) => {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
