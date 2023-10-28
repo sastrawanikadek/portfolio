@@ -12,7 +12,7 @@ const Badge: FC<BadgeProps> = ({ backgroundColor, textColor, icon, name }) => {
   return (
     <div
       className={clsx(
-        'flex items-center p-1 rounded-md shadow-md',
+        'flex items-center py-1 px-2 rounded-md shadow-md',
         backgroundColor,
         textColor
       )}

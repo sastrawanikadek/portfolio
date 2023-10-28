@@ -1,21 +1,21 @@
-import type { NextPage } from 'next';
-import React, { useEffect } from 'react';
-import Image from 'next/image';
 import Aos from 'aos';
-import Head from 'components/Head';
-import NavItems from 'components/NavItems';
-import SectionIndicator from 'components/SectionIndicator';
-import SocialMedia from 'components/SocialMedia';
-import ContactItem from 'components/ContactItem';
+import 'aos/dist/aos.css';
 import AboutBadge from 'components/AboutBadge';
 import aboutBadges from 'components/AboutBadge/badges';
-import projects from 'components/ProjectItem/projects';
+import ContactItem from 'components/ContactItem';
+import Head from 'components/Head';
+import NavItems from 'components/NavItems';
 import ProjectItem from 'components/ProjectItem';
-import publications from 'components/PublicationItem/publications';
+import projects from 'components/ProjectItem/projects';
 import PublicationItem from 'components/PublicationItem';
+import publications from 'components/PublicationItem/publications';
+import SectionIndicator from 'components/SectionIndicator';
+import SocialMedia from 'components/SocialMedia';
+import type { NextPage } from 'next';
+import Image from 'next/image';
+import { useEffect } from 'react';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
-import 'aos/dist/aos.css';
 
 const sections = ['about', 'project', 'publication', 'contact'];
 
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         className='absolute h-full max-h-[250vh] w-2/4 -top-1/4 -left-1/4'
       >
         <div className='relative h-full w-full'>
-          <Image src='/images/hero-top-blob.svg' alt='Blob' layout='fill' />
+          <Image src='/images/hero-top-blob.svg' alt='Blob' fill />
         </div>
       </figure>
       <section className='h-screen relative overflow-hidden md:max-w-[calc(100%-80px)] md:ml-20'>
@@ -90,9 +90,9 @@ const Home: NextPage = () => {
               data-aos-delay={500}
               className='text-lg w-full md:w-3/4 lg:w-1/2 font-montserrat text-gray-300'
             >
-              I&apos;m focused on web and mobile development both front-end and
-              back-end. Currently have an interest in NLP, machine learning, and
-              deep learning.
+              I&apos;m focused on Web and Mobile development both Front-end and
+              Back-end. Currently have an interest in System Architecture and
+              DevOps.
             </p>
             <button
               data-aos='fade-up'
@@ -116,7 +116,6 @@ const Home: NextPage = () => {
             className='w-full hidden flex-1 items-end divide-x md:flex'
           >
             <ContactItem type='email' value='sastrawanikadek@gmail.com' />
-            <ContactItem type='phone' value='+6281-916-984-360' />
             <ContactItem type='location' value='Bali, Indonesia' />
           </div>
         </div>
@@ -126,11 +125,7 @@ const Home: NextPage = () => {
           className='absolute hidden lg:block md:h-2/3 sm:w-2/4 bottom-0 right-8 z-10'
         >
           <div className='relative h-full w-full'>
-            <Image
-              src='/images/hero.svg'
-              alt='Coding Illustration'
-              layout='fill'
-            />
+            <Image src='/images/hero.svg' alt='Coding Illustration' fill />
           </div>
         </figure>
         <figure
@@ -139,7 +134,7 @@ const Home: NextPage = () => {
           className='absolute hidden sm:block md:h-2/3 md:w-2/4 -bottom-16 -right-40'
         >
           <div className='relative h-full w-full'>
-            <Image src='/images/hero-blob.svg' alt='Blob' layout='fill' />
+            <Image src='/images/hero-blob.svg' alt='Blob' fill />
           </div>
         </figure>
       </section>
@@ -151,36 +146,28 @@ const Home: NextPage = () => {
       >
         <div className='container flex flex-col px-8 lg:px-16 lg:flex-row'>
           <div className='flex-1 order-2 lg:order-1'>
-            <h4 className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'>
+            <h4 className='mb-12 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-purple-500'>
               About Me
             </h4>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              Hello! My name is Kadek Sastrawan, I&apos;m a fresh graduate and
-              self-taught software engineer that&apos;s passionate about
-              programming since in highschool. It started when I randomly bought
-              a programming book and try all of the provided examples, turns out
-              it was really fun and I feel like I can make anything with
-              programming.
+              Hello! My name is Kadek Sastrawan, I&apos;m 23 years old, and
+              living in Bali. I&apos;m a self-taught software engineer
+              who&apos;s passionate about programming since high school.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              Long story short, I&apos;ve been learning some languages and
-              technologies, I also did a freelance job while studying in
-              college. My main focus now is to keep widening my knowledge by
-              learning the cutting-edge technology and applying it by developing
-              a meaningful application.
+              It started when I randomly bought a programming book and tried all
+              of the provided examples. Turns out it was really fun and the more
+              I know, it&apos;s getting even more exciting because I feel like I
+              can create anything that is helpful. Long story short, It&apos;s
+              been 10 years and since then I have kept learning about it, from
+              the Frontend, Backend, DevOps, and even AI.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              Recently I was interested in learning NLP, machine learning, and
-              deep learning. I learned it for about a year or so and publish a{' '}
-              <a
-                href='https://www.sciencedirect.com/science/article/pii/S2405959521001375'
-                target='_blank'
-                rel='noreferrer'
-                className='text-purple-500'
-              >
-                research article
-              </a>{' '}
-              that uses deep learning methods.
+              With only 2 years of professional experience, I always try to
+              implement the best practices and reflect on my past mistakes. My
+              main focus now is to keep widening my knowledge by learning
+              cutting-edge technology and applying it by developing meaningful
+              applications.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300 '>
               Here are some technologies that I&apos;ve used and worked with
@@ -197,8 +184,8 @@ const Home: NextPage = () => {
               <Image
                 src='/images/me.jpg'
                 alt='Myself'
-                layout='fill'
                 className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
+                fill
               />
             </div>
           </div>
@@ -212,9 +199,9 @@ const Home: NextPage = () => {
           <h4
             data-aos='fade-down'
             data-aos-delay={100}
-            className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'
+            className='mb-12 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-purple-500'
           >
-            The Project that I&apos;ve Developed
+            Projects
           </h4>
           <div className='flex flex-col lg:flex-row'>
             <div className='flex-1 lg:pr-8'>
@@ -228,7 +215,7 @@ const Home: NextPage = () => {
                 </div>
               ))}
             </div>
-            <div className='flex-1 lg:mt-80 lg:pl-8'>
+            <div className='flex-1 lg:pl-8'>
               {projects.slice(Math.ceil(projects.length / 2)).map((v, i) => (
                 <div
                   key={v.name}
@@ -250,9 +237,9 @@ const Home: NextPage = () => {
           <h4
             data-aos='fade-down'
             data-aos-delay={100}
-            className='mb-8 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-white'
+            className='mb-12 text-3xl font-bold font-poppins flex items-center after:h-[1px] after:min-w-[40px] after:flex-1 after:ml-4 after:bg-slate-400 text-purple-500'
           >
-            The Article that I&apos;ve Published
+            Publications
           </h4>
           <div className='flex flex-col lg:flex-row'>
             <div className='flex-1 lg:pr-8'>
@@ -345,7 +332,7 @@ const Home: NextPage = () => {
           className='container px-8 lg:px-16'
         >
           <p className='text-sm text-center text-gray-300 font-montserrat'>
-            Developed by Kadek Sastrawan
+            Developed with 🤍 by Kadek Sastrawan
           </p>
         </div>
       </footer>

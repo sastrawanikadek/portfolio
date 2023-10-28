@@ -1,14 +1,22 @@
-/** @type {import('next').NextConfig} */
-const withReactSvg = require('next-react-svg');
 const path = require('path');
 
-module.exports = withReactSvg({
+/** @type {import('next-react-svg').NextReactSvgConfig} */
+const nextReactSvgConfig = {
   include: path.resolve(__dirname, 'public/images/'),
-  webpack(config, _) {
-    return config;
-  },
+};
+const withReactSvg = require('next-react-svg')(nextReactSvgConfig);
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['user-images.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'user-images.githubusercontent.com',
+      },
+    ],
   },
-});
+};
+
+module.exports = withReactSvg(nextConfig);

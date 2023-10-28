@@ -3,72 +3,64 @@ import techBadges from 'components/Badge/badges';
 const badges = [
   {
     url: 'https://tailwindcss.com/',
-    ...techBadges['tailwind'],
+    ...techBadges.tailwind,
   },
   {
     url: 'https://reactjs.org/',
-    ...techBadges['react'],
+    ...techBadges.react,
   },
   {
     url: 'https://python.org/',
-    ...techBadges['python'],
+    ...techBadges.python,
   },
   {
     url: 'https://php.net/',
-    ...techBadges['php'],
+    ...techBadges.php,
   },
   {
     url: 'https://nextjs.org/',
-    ...techBadges['next'],
+    ...techBadges.next,
   },
   {
     url: 'https://mysql.com/',
-    ...techBadges['mysql'],
-  },
-  {
-    url: 'https://kotlinlang.org/',
-    ...techBadges['kotlin'],
-  },
-  {
-    url: 'https://keras.io/',
-    ...techBadges['keras'],
-  },
-  {
-    url: 'https://javascript.com/',
-    ...techBadges['javascript'],
-  },
-  {
-    url: 'https://go.dev/',
-    ...techBadges['go'],
+    ...techBadges.mysql,
   },
   {
     url: 'https://git-scm.com/',
-    ...techBadges['git'],
-  },
-  {
-    url: 'https://flask.palletsprojects.com/',
-    ...techBadges['flask'],
+    ...techBadges.git,
   },
   {
     url: 'https://typescriptlang.org/',
-    ...techBadges['typescript'],
+    ...techBadges.typescript,
   },
   {
-    url: 'https://nodejs.org/',
-    ...techBadges['node'],
+    url: 'https://fastapi.tiangolo.com/',
+    ...techBadges.fastapi
   },
   {
-    url: 'https://jquery.com/',
-    ...techBadges['jquery'],
+    url: 'https://laravel.com',
+    ...techBadges.laravel
   },
   {
-    url: 'https://selenium.dev/',
-    ...techBadges['selenium'],
+    url: 'https://postgresql.org',
+    ...techBadges.postgresql
   },
   {
-    url: 'https://jwt.io/',
-    ...techBadges['jwt'],
+    url: 'https://azure.microsoft.com',
+    ...techBadges.azure
   },
+  {
+    url: 'https://www.gnu.org/software/bash/',
+    ...techBadges.bash
+  },
+  {
+    url: 'https://reactnative.dev',
+    ...techBadges.reactNative
+  },
+  {
+    url: 'https://docker.com',
+    ...techBadges.docker
+  }
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default badges;

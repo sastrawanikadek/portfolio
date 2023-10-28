@@ -1,8 +1,11 @@
 import React from 'react';
 import {
   SiApollographql,
+  SiDocker,
+  SiFastapi,
   SiFlask,
   SiGit,
+  SiGnubash,
   SiGo,
   SiGraphql,
   SiJavascript,
@@ -10,11 +13,14 @@ import {
   SiJsonwebtokens,
   SiKeras,
   SiKotlin,
+  SiLaravel,
+  SiMicrosoftazure,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
+  SiPostgresql,
   SiPython,
   SiReact,
   SiScikitlearn,
@@ -156,6 +162,48 @@ const badges = {
     textColor: 'text-white',
     icon: <SiScikitlearn />,
     name: 'scikit-learn',
+  },
+  fastapi: {
+    backgroundColor: 'bg-green-700',
+    textColor: 'text-white',
+    icon: <SiFastapi />,
+    name: 'FastAPI',
+  },
+  laravel: {
+    backgroundColor: 'bg-red-600',
+    textColor: 'text-white',
+    icon: <SiLaravel />,
+    name: 'Laravel'
+  },
+  postgresql: {
+    backgroundColor: 'bg-[#336791]',
+    textColor: 'text-white',
+    icon: <SiPostgresql />,
+    name: 'PostgreSQL'
+  },
+  azure: {
+    backgroundColor: 'bg-[#0078d4]',
+    textColor: 'text-white',
+    icon: <SiMicrosoftazure />,
+    name: 'Azure'
+  },
+  bash: {
+    backgroundColor: 'bg-black',
+    textColor: 'text-white',
+    icon: <SiGnubash />,
+    name: 'Bash'
+  },
+  reactNative: {
+    backgroundColor: 'bg-sky-400',
+    textColor: 'text-white',
+    icon: <SiReact />,
+    name: 'React Native',
+  },
+  docker: {
+    backgroundColor: 'bg-blue-400',
+    textColor: 'text-white',
+    icon: <SiDocker />,
+    name: 'Docker',
   },
 };
 
