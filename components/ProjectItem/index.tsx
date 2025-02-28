@@ -29,6 +29,7 @@ const ProjectItem = ({
           href={projectURL}
           target='_blank'
           rel='noreferrer'
+          aria-label={`View ${name} project`}
           className='block relative h-80 w-full'
         >
           <Image
@@ -55,6 +56,7 @@ const ProjectItem = ({
               href={projectURL}
               target='_blank'
               rel='noreferrer'
+              aria-label={`View ${name} project`}
               className='text-2xl font-bold font-poppins transition duration-300 text-white hover:text-purple-500'
             >
               {name}
@@ -69,6 +71,7 @@ const ProjectItem = ({
               href={repositoryURL}
               target='_blank'
               rel='noreferrer'
+              aria-label={`View ${name} repository`}
               className='ml-4'
             >
               <AiOutlineGithub className='h-8 w-8 transition duration-300 ease-in-out text-gray-500 hover:text-purple-500' />
@@ -79,6 +82,7 @@ const ProjectItem = ({
               href={projectURL}
               target='_blank'
               rel='noreferrer'
+              aria-label={`View ${name} project`}
               className='ml-4'
             >
               <FiExternalLink className='h-8 w-8 transition duration-300 ease-in-out text-gray-500 hover:text-purple-500' />

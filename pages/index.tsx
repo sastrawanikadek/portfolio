@@ -17,7 +17,7 @@ import { useEffect } from 'react';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
 
-const sections = ['about', 'project', 'publication', 'contact'];
+const sections = ['about', 'projects', 'publications', 'contact'];
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative'>
       <Head
         title='Kadek Sastrawan | Software Engineer'
         description='I am a Software Engineer that is passionate with programming and loves to develop meaningful applications'
@@ -182,9 +182,10 @@ const Home: NextPage = () => {
           <div className='mb-16 flex-1 flex items-center justify-center order-1 lg:order-2 lg:mb-0'>
             <div className='relative h-60 w-60 lg:h-80 lg:w-80'>
               <Image
-                src='/images/me.jpg'
+                src='/images/me.webp'
                 alt='Myself'
                 className='rounded-md grayscale transition-all duration-500 hover:grayscale-0'
+                priority
                 fill
               />
             </div>
@@ -192,7 +193,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section
-        id='project'
+        id='projects'
         className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
       >
         <div className='container pt-16 px-8 lg:pt-0 lg:px-16'>
@@ -230,7 +231,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section
-        id='publication'
+        id='publications'
         className='min-h-screen relative overflow-hidden flex items-center md:max-w-[calc(100%-80px)] md:ml-20'
       >
         <div className='container px-8 lg:px-16'>

@@ -27,6 +27,7 @@ const SocialMedia = ({ type, name }: SocialMediaProps) => {
       data-aos-delay={100}
       data-aos-offset={0}
       className='block mb-6'
+      aria-label={`Link to ${type} profile`}
     >
       {icons[type]}
     </a>

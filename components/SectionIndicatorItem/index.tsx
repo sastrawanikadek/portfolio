@@ -22,6 +22,7 @@ const SectionIndicatorItem = ({
     <button
       data-aos='zoom-in'
       data-aos-delay={100 * (index + 1)}
+      aria-label={`Scroll to ${sectionId}`}
       className={clsx(
         active ? 'border-purple-500' : 'border-white ',
         'group relative overflow-hidden rounded-lg h-4 w-4 mb-2 border border-solid transition duration-300 ease-in-out hover:border-purple-500'
