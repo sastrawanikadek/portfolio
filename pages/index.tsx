@@ -150,24 +150,22 @@ const Home: NextPage = () => {
               About Me
             </h4>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              Hello! My name is Kadek Sastrawan, I&apos;m 23 years old, and
-              living in Bali. I&apos;m a self-taught software engineer
-              who&apos;s passionate about programming since high school.
+              Hi, I&apos;m Kadek Sastrawan, a software engineer based in Bali
+              with a passion for building softwares. My journey started in high
+              school when I picked up a programming book out of curiosity, and
+              I&apos;ve been learning and coding ever since.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              It started when I randomly bought a programming book and tried all
-              of the provided examples. Turns out it was really fun and the more
-              I know, it&apos;s getting even more exciting because I feel like I
-              can create anything that is helpful. Long story short, It&apos;s
-              been 10 years and since then I have kept learning about it, from
-              the Frontend, Backend, DevOps, and even AI.
+              With three years of professional experience, I&apos;ve worked
+              across frontend, backend, and DevOps, focusing on best practices,
+              performance optimization, and scalable architectures. I strive to
+              apply best practices, continuously improve my skills, and learn
+              from past challenges.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300'>
-              With only 2 years of professional experience, I always try to
-              implement the best practices and reflect on my past mistakes. My
-              main focus now is to keep widening my knowledge by learning
-              cutting-edge technology and applying it by developing meaningful
-              applications.
+              My current focus is on building scalable web applications,
+              optimizing performance, and exploring new technologies to create
+              meaningful solutions.
             </p>
             <p className='w-full font-montserrat text-base mb-4 text-gray-300 '>
               Here are some technologies that I&apos;ve used and worked with

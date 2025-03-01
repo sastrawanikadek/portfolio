@@ -10,6 +10,8 @@ export interface ProjectItemProps {
   name: string;
   year: number;
   descriptions: string[];
+  features: string[];
+  contributions: string[];
   techStacks: BadgeProps[];
 }
 
@@ -20,6 +22,8 @@ const ProjectItem = ({
   name,
   year,
   descriptions,
+  features,
+  contributions,
   techStacks,
 }: ProjectItemProps) => {
   return (
@@ -102,6 +106,30 @@ const ProjectItem = ({
             {description}
           </p>
         ))}
+        <div className='flex flex-col gap-2'>
+          <h6 className='text-base font-bold font-poppins text-gray-300'>
+            Key Features
+          </h6>
+          <ul className='list-disc list-outside pl-6 space-y-1'>
+            {features.map((feature, index) => (
+              <li key={index} className='text-gray-300'>
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className='flex flex-col gap-2'>
+          <h6 className='text-base font-bold font-poppins text-gray-300'>
+            Contributions
+          </h6>
+          <ul className='list-disc list-outside pl-6 space-y-1'>
+            {contributions.map((contribution, index) => (
+              <li key={index} className='text-gray-300'>
+                {contribution}
+              </li>
+            ))}
+          </ul>
+        </div>
         <p className='w-full font-montserrat text-base text-gray-300 '>
           Here are some technologies used to develop this application:
         </p>

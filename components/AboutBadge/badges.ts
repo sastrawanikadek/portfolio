@@ -26,41 +26,33 @@ const badges = [
     ...techBadges.mysql,
   },
   {
-    url: 'https://git-scm.com/',
-    ...techBadges.git,
-  },
-  {
     url: 'https://typescriptlang.org/',
     ...techBadges.typescript,
   },
   {
     url: 'https://fastapi.tiangolo.com/',
-    ...techBadges.fastapi
+    ...techBadges.fastapi,
   },
   {
     url: 'https://laravel.com',
-    ...techBadges.laravel
+    ...techBadges.laravel,
   },
   {
     url: 'https://postgresql.org',
-    ...techBadges.postgresql
+    ...techBadges.postgresql,
   },
   {
     url: 'https://azure.microsoft.com',
-    ...techBadges.azure
+    ...techBadges.azure,
   },
   {
     url: 'https://www.gnu.org/software/bash/',
-    ...techBadges.bash
-  },
-  {
-    url: 'https://reactnative.dev',
-    ...techBadges.reactNative
+    ...techBadges.bash,
   },
   {
     url: 'https://docker.com',
-    ...techBadges.docker
-  }
+    ...techBadges.docker,
+  },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default badges;

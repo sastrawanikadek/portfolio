@@ -1,7 +1,7 @@
-import React from 'react';
 import {
   SiApollographql,
   SiDocker,
+  SiElectron,
   SiFastapi,
   SiFlask,
   SiGit,
@@ -23,6 +23,7 @@ import {
   SiPostgresql,
   SiPython,
   SiReact,
+  SiRedis,
   SiScikitlearn,
   SiSelenium,
   SiTailwindcss,
@@ -173,25 +174,25 @@ const badges = {
     backgroundColor: 'bg-red-600',
     textColor: 'text-white',
     icon: <SiLaravel />,
-    name: 'Laravel'
+    name: 'Laravel',
   },
   postgresql: {
     backgroundColor: 'bg-[#336791]',
     textColor: 'text-white',
     icon: <SiPostgresql />,
-    name: 'PostgreSQL'
+    name: 'PostgreSQL',
   },
   azure: {
     backgroundColor: 'bg-[#0078d4]',
     textColor: 'text-white',
     icon: <SiMicrosoftazure />,
-    name: 'Azure'
+    name: 'Azure',
   },
   bash: {
     backgroundColor: 'bg-black',
     textColor: 'text-white',
     icon: <SiGnubash />,
-    name: 'Bash'
+    name: 'Bash',
   },
   reactNative: {
     backgroundColor: 'bg-sky-400',
@@ -204,6 +205,18 @@ const badges = {
     textColor: 'text-white',
     icon: <SiDocker />,
     name: 'Docker',
+  },
+  redis: {
+    backgroundColor: 'bg-red-500',
+    textColor: 'text-white',
+    icon: <SiRedis />,
+    name: 'Redis',
+  },
+  electron: {
+    backgroundColor: 'bg-black',
+    textColor: 'text-white',
+    icon: <SiElectron />,
+    name: 'Electron',
   },
 };
 
