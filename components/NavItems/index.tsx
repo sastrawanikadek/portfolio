@@ -32,7 +32,7 @@ const NavItems = ({
               color,
               textCase,
               isBold && 'font-bold',
-              'block p-4 rounded-md transition duration-300 ease-in-out hover:text-purple-500 hover:bg-black hover:bg-opacity-10'
+              'block p-3 sm:p-4 rounded-md transition duration-300 ease-in-out hover:text-purple-500 hover:bg-black hover:bg-opacity-10'
             )}
             onClick={() => handleClick(v)}
           >

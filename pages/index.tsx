@@ -32,8 +32,8 @@ const Home: NextPage = () => {
         title='Kadek Sastrawan | Software Engineer'
         description='I am a Software Engineer that is passionate with programming and loves to develop meaningful applications'
       />
-      <header className='absolute w-full px-8 sm:px-24 pt-8 flex justify-end z-30 font-poppins'>
-        <nav className='ml-1 flex-none'>
+      <header className='absolute w-full px-8 sm:px-24 pt-8 flex justify-center sm:justify-end z-30 font-poppins'>
+        <nav className='ml-0 sm:ml-1 flex-none'>
           <ul className='flex'>
             <NavItems sectionIds={sections} />
           </ul>
