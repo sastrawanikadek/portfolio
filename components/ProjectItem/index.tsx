@@ -112,7 +112,10 @@ const ProjectItem = ({
           </h6>
           <ul className='list-disc list-outside pl-6 space-y-1'>
             {features.map((feature, index) => (
-              <li key={index} className='text-gray-300'>
+              <li
+                key={index}
+                className='font-montserrat text-base text-gray-300'
+              >
                 {feature}
               </li>
             ))}
@@ -124,7 +127,10 @@ const ProjectItem = ({
           </h6>
           <ul className='list-disc list-outside pl-6 space-y-1'>
             {contributions.map((contribution, index) => (
-              <li key={index} className='text-gray-300'>
+              <li
+                key={index}
+                className='font-montserrat text-base text-gray-300'
+              >
                 {contribution}
               </li>
             ))}
